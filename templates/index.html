@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Insert title here</title>
+		<!--<link rel="stylesheet" href="css/style.css" type="text/css" />-->	
+		<!-- <link th:href="@{/css/style.css}" href="/css/style.css"  rel="stylesheet" type="text/css"  />-->
+	</head>
+<body>
+	<div id="wrapper">
+		<div id="loginDetails">
+	    	<form th:action="@{/login}" method="get">
+   				<button class="btn btn-md btn-warning btn-block" type="Submit">Login</button>
+			</form>
+			
+			<form th:action="@{/registration}" method="get">
+   				<button class="btn btn-md btn-warning btn-block" type="Submit">Create account</button>
+			</form>
+			
+				<a th:href="@{/home}" th:if="${user != null}" th:text="${user.email}">someValue</a> 
+			<!--<span th:if="${user != null}" th:text="${user.email}">someValue</span>-->
+	    </div>
+	</div>
+	<h1>Hello Braza</h1>
+
+</body>
+</html>

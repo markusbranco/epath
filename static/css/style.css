@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Knewave|Luckiest+Guy|Sigmar+One|Ranchers');
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Yantramanav');
+
+body {
+    margin: 0;
+}
+
+#loginDetails{
+	width: 100%;
+	height: 100px;
+	background-color: #0192E4;	
+}
+
+#home {
+    display: flex;
+    flex-direction: row
+ }
+
+.textDefault {
+    font-family: 'Ubuntu Condensed', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#serviceGalery {
+	width: 820px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid;
+	justify-content: space-between;
+}
+
+.serviceName {
+    color: black;
+    font-size: 24px;
+}
+
+.description {
+    color: #4d4d4d;
+    font-size: 20px;
+}
+
+.grade {
+	margin-top: 15px;
+    color: bfbfbf;
+    font-size: 16px;
+    float: left;
+}
+
+.price {
+    color: #0192E4;
+    font-size: 24px;
+    float: right;
+    margin-top: 15px; 
+}
+
+.alignPriceAndGrade {
+	clear: both;
+}
+
+.productImage {
+    width: 400px;
+    height: 250px;
+}
+
+.productInformation 
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+}
+
+.productInformation > p {
+	margin: 0;
+}
+
+table {
+
+   /*margin: 0 auto 0 auto;*/
+   border: 1px solid;
+   padding: 20px;
+   margin-bottom: 15px;
+
+}
+
+.button {
+    width: 100px;
+    border: none;
+    border-radius: 0.2em;
+    border: 1px solid #0192E4;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+ .buyServiceButton {
+    color: #0192E4;
+    font-size: 20px;
+    float: right;
+    margin-top: 10px; 
+
+  }
+
+  .buyServiceButton:hover {
+      background-color: #0192E4;
+      color: white;
+  }
+
+.row {
+   /* margin-top: 25px;*/
+    display: flex;  
+    flex-direction: row;
+    
+  }
+  
+  .column {
+    /*margin-right: 30px;*/
+    margin-bottom: 10px;
+  }
+
+.rating {
+  	unicode-bidi: bidi-override;
+  	direction: rtl;
+    text-align: left;
+    margin: 0;
+  	padding: 0; 
+  
+}
+
+.checked{
+}
+
+.rating > span {
+  	display: inline-block; 	
+  	width: 1.0em;
+  	font-size: 30px;  	
+}
+
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+   	content: "\2605";
+   	position: absolute;
+   	color: #FFDF00;
+}
+
+
+
